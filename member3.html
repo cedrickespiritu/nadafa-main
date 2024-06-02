@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset= "UTF-8">
+    <meta http-equiv = "X-UA-Compatible"content="IE = edge">
+    <meta name = "viewport" content = "width = device-width,initial-scale=1.0">
+    <title>Taylor Sweep.Com</title>
+    <link href="css/demographic.css"rel="stylesheet"type="text/css"/>
+    <script src="https://kit.fontawesome.com/2e271a0554.js" crossorigin="anonymous"></script>
+</head>
+ <body>
+     <!-- ----------about--------- -->
+     <div id="about">
+        <div class="container">
+            <div class="row">
+           
+      
+                <div class="about-col-1">
+                 <img src="imgs/michael.jpg">
+                 
+                </div>   
+               
+                <div class="about-col-2">
+                 <h1 class="sub-title">MICHAEL RAY <br> DIAZ</h1>
+
+ 
+                     <div class="tab-titles">
+                         <p class="tab-links active-link" onclick="opentab('skills')">Details</p>
+                         <p class="tab-links" onclick="opentab('experience')">Education</p>
+                         
+                     </div>
+                     <div class="tab-contents active-tab" id="skills">
+                         <ul>
+                        
+                             <li><span>AGE:</span><br>16</li>
+                             <li><span>GENDER:</span><br>MALE</li>
+                             <li><span>NATIONALITY:</span><br>PHILIPPINES</li>
+                         </ul>
+ 
+ 
+                     </div>
+                     <div class="tab-contents " id="experience">
+                         <ul>
+                             <li><span>2022-2023</span><br>PANGAO INTEGRATED SCHOOL GRADUATE</li>
+                             <li><span>2023-2024</span><br>STUDENT OF AISIAN INSTITUTE OF COMPUTER STUDIES </li>
+                             <li><span>2023-2025</span><br>ICT STUDENT OF AICS</li>
+                         </ul>
+ 
+ 
+                     </div>
+                     
+                                </ul>
+                           </div>
+                      </div>
+                </div> 
+         </div>
+  </div>
+  <a href="member4.html" class="btn">Next Member</a>
+  
+   
+  
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+
+    
+    }
+
+    </script>
+  </body>
+</html>
